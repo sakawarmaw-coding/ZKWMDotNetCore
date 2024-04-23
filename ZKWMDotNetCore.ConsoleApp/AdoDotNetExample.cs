@@ -79,13 +79,13 @@ namespace ZKWMDotNetCore.ConsoleApp
             connection.Open();
 
             string query = @"INSERT INTO [dbo].[Tbl_Blog]
-           ([BlogTitle]
-           ,[BlogAuthor]
-           ,[BlogContent])
-     VALUES
-           (@BlogTitle
-           ,@BlogAuthor
-           ,@BlogContent)";
+                            ([BlogTitle]
+                            ,[BlogAuthor]
+                            ,[BlogContent])
+                            VALUES
+                            (@BlogTitle
+                            ,@BlogAuthor
+                            ,@BlogContent)";
 
             SqlCommand cmd = new SqlCommand(query,connection);
             cmd.Parameters.AddWithValue("@BlogTitle", title);
@@ -105,10 +105,10 @@ namespace ZKWMDotNetCore.ConsoleApp
             connection.Open();
 
             string query = @"UPDATE [dbo].[Tbl_Blog]
-         SET [BlogTitle] = @BlogTitle
-              ,[BlogAuthor] = @BlogAuthor
-              ,[BlogContent] = @BlogContent
-         WHERE BlogId = @BlogId";
+                             SET [BlogTitle] = @BlogTitle
+                                  ,[BlogAuthor] = @BlogAuthor
+                                  ,[BlogContent] = @BlogContent
+                             WHERE BlogId = @BlogId";
 
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);

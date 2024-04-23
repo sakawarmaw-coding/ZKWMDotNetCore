@@ -6,11 +6,14 @@ using ZKWMDotNetCore.ConsoleApp;
 
 Console.WriteLine("Hello, World!");
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-//adoDotNetExample.Read();
-//adoDotNetExample.Create("title", "author", "content");
-//adoDotNetExample.Update(2, "title", "author", "content");
-//adoDotNetExample.Delete(3);
-adoDotNetExample.Edit(3);
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+////adoDotNetExample.Read();
+////adoDotNetExample.Create("title", "author", "content");
+////adoDotNetExample.Update(2, "title", "author", "content");
+////adoDotNetExample.Delete(3);
+//adoDotNetExample.Edit(3);
+
+DapperExample dp= new DapperExample();  
+dp.Run();
 
 Console.ReadKey();

@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZKWMDotNetCore.ConsoleApp
+namespace ZKWMDotNetCore.ConsoleApp;
+public class BlogDto
 {
-    public class BlogDto
-    {
-        public int BlogId { get; set; } 
-        public string BlogTitle { get; set;}
-        public string BlogAuthor { get; set; }
-        public string BlogContent { get; set; }
-
-    }
+    public int BlogId { get; set; } 
+    public string BlogTitle { get; set;}
+    public string BlogAuthor { get; set; }
+    public string BlogContent { get; set; }
 }
