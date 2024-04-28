@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZKWMDotNetCore.ConsoleApp
+namespace ZKWMDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     public class AdoDotNetExample
     {
@@ -60,7 +60,7 @@ namespace ZKWMDotNetCore.ConsoleApp
 
             connection.Close();
 
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("No data found");
             }
@@ -87,7 +87,7 @@ namespace ZKWMDotNetCore.ConsoleApp
                             ,@BlogAuthor
                             ,@BlogContent)";
 
-            SqlCommand cmd = new SqlCommand(query,connection);
+            SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogTitle", title);
             cmd.Parameters.AddWithValue("@BlogAuthor", author);
             cmd.Parameters.AddWithValue("@BlogContent", content);

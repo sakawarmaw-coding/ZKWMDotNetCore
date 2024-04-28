@@ -2,7 +2,7 @@
 
 using Microsoft.Data.SqlClient;
 using System.Data;
-using ZKWMDotNetCore.ConsoleApp;
+using ZKWMDotNetCore.ConsoleApp.EFCoreExamples;
 
 Console.WriteLine("Hello, World!");
 

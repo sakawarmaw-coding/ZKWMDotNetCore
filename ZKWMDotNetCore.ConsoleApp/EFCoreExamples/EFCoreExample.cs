@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZKWMDotNetCore.ConsoleApp.Dtos;
 
-namespace ZKWMDotNetCore.ConsoleApp
+namespace ZKWMDotNetCore.ConsoleApp.EFCoreExamples
 {
     internal class EFCoreExample
     {
@@ -65,14 +66,14 @@ namespace ZKWMDotNetCore.ConsoleApp
         public void Update(int id, string title, string author, string content)
         {
             var item = db.Blogs.FirstOrDefault(x => x.BlogId == id);
-            if(item is null)
+            if (item is null)
             {
                 Console.WriteLine("No data Found");
                 return;
             }
-            item.BlogTitle=title;
-            item.BlogAuthor=author;
-            item.BlogContent=content;
+            item.BlogTitle = title;
+            item.BlogAuthor = author;
+            item.BlogContent = content;
             int result = db.SaveChanges();
             string message = result > 0 ? "Updating Successful" : "Updating Failed";
             Console.WriteLine(message);
