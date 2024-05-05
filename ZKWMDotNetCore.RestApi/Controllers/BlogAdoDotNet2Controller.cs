@@ -85,7 +85,7 @@ namespace ZKWMDotNetCore.RestApi.Controllers
                     WHERE BlogId = @BlogId";
 
             int result = _adoDotNetService.Execute(query,
-             new AdoDotNetParameter("@BlogId", blog.BlogId),
+             new AdoDotNetParameter("@BlogId", id),
              new AdoDotNetParameter("@BlogTitle", blog.BlogTitle),
              new AdoDotNetParameter("@BlogAuthor", blog.BlogAuthor),
              new AdoDotNetParameter("@BlogContent", blog.BlogContent));
