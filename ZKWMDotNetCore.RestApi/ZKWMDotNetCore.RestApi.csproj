@@ -14,4 +14,8 @@
 		<PackageReference Include="Dapper" Version="2.1.35" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\ZKWMDotNetCore.Shared\ZKWMDotNetCore.Shared.csproj" />
+	</ItemGroup>
+
 </Project>
