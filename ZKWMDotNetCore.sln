@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.RestApi", "ZKWMDotNetCore.RestApi\ZKWMDotNetCore.RestApi.csproj", "{FCF2397A-0084-4D68-A8DB-79CA71C63A1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.Shared", "ZKWMDotNetCore.Shared\ZKWMDotNetCore.Shared.csproj", "{661B52B6-76C4-4796-B552-71478EA17DA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.Shared", "ZKWMDotNetCore.Shared\ZKWMDotNetCore.Shared.csproj", "{661B52B6-76C4-4796-B552-71478EA17DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.RestApiWithNLayer", "ZKWMDotNetCore.RestApiWithNLayer\ZKWMDotNetCore.RestApiWithNLayer.csproj", "{1FBFF9EA-BB8C-4D07-BD64-39A24248265C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{661B52B6-76C4-4796-B552-71478EA17DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{661B52B6-76C4-4796-B552-71478EA17DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{661B52B6-76C4-4796-B552-71478EA17DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBFF9EA-BB8C-4D07-BD64-39A24248265C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBFF9EA-BB8C-4D07-BD64-39A24248265C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBFF9EA-BB8C-4D07-BD64-39A24248265C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBFF9EA-BB8C-4D07-BD64-39A24248265C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
