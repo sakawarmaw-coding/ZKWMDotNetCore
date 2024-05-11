@@ -45,6 +45,28 @@ namespace ZKWMDotNetCore.RestApiWithNLayer.Features.Blog
             return result;
         }
 
+        public int PatchBlog(int id, BlogModel reqModel)
+        {
+            var item = _context.Blogs.FirstOrDefault(x => x.BlogId == id);
+            if (item is null) return 0;
+
+            if (!string.IsNullOrEmpty(reqModel.BlogTitle))
+            {
+                item.BlogTitle = reqModel.BlogTitle;
+            }
+            if (!string.IsNullOrEmpty(reqModel.BlogAuthor))
+            {
+                item.BlogAuthor = reqModel.BlogAuthor;
+            }
+            if (!string.IsNullOrEmpty(reqModel.BlogContent))
+            {
+                item.BlogContent = reqModel.BlogContent;
+            }
+            int result = _context.SaveChanges();
+
+            return result;
+        }
+
         public int DeleteBlog(int id)
         {
             var item=_context.Blogs.FirstOrDefault(x => x.BlogId == id);
@@ -52,7 +74,7 @@ namespace ZKWMDotNetCore.RestApiWithNLayer.Features.Blog
 
             _context.Blogs.Remove(item);
             var result = _context.SaveChanges();   
-            return (int)result;
+            return result;
 
         }
 
