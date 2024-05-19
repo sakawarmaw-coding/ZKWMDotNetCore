@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.ConsoleAppHt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.ConsoleAppRestClientExample", "ZKWMDotNetCore.ConsoleAppRestClientExample\ZKWMDotNetCore.ConsoleAppRestClientExample.csproj", "{99823305-B7DF-4ED0-A060-F07D082DE8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.PizzaApi", "ZKWMDotNetCore.PizzaApi\ZKWMDotNetCore.PizzaApi.csproj", "{B293A1A6-26CA-4EBD-A8D0-6FE1DBC324D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.PizzaApi", "ZKWMDotNetCore.PizzaApi\ZKWMDotNetCore.PizzaApi.csproj", "{B293A1A6-26CA-4EBD-A8D0-6FE1DBC324D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.ConsoleAppRefitExamples", "ZKWMDotNetCore.ConsoleAppRefitExamples\ZKWMDotNetCore.ConsoleAppRefitExamples.csproj", "{93FE95D8-A53A-4878-9919-78FC7C81D3B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{B293A1A6-26CA-4EBD-A8D0-6FE1DBC324D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B293A1A6-26CA-4EBD-A8D0-6FE1DBC324D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B293A1A6-26CA-4EBD-A8D0-6FE1DBC324D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FE95D8-A53A-4878-9919-78FC7C81D3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FE95D8-A53A-4878-9919-78FC7C81D3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FE95D8-A53A-4878-9919-78FC7C81D3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FE95D8-A53A-4878-9919-78FC7C81D3B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
