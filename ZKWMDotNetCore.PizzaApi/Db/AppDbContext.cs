@@ -44,19 +44,6 @@ public class PizzaExtraModel
     public string PriceStr { get { return "$ " + Price; } }
 }
 
-public class OrderRequest
-{
-    public int PizzaId { get; set; }
-    public int[] Extras { get; set; }
-}
-
-public class OrderResponse
-{
-    public string Message { get; set; }
-    public string InvoiceNo { get; set; }
-    public decimal TotalAmount { get; set; }
-}
-
 [Table("Tbl_PizzaOrder")]
 public class PizzaOrderModel
 {
@@ -74,5 +61,43 @@ public class PizzaOrderDetailModel
     public int PizzaOrderDetailId { get; set; }
     public string PizzaOrderInvoiceNo { get; set; }
     public int PizzaExtraId { get; set; }
+}
+
+public class OrderRequest
+{
+    public int PizzaId { get; set; }
+    public int[] Extras { get; set; }
+}
+
+public class OrderResponse
+{
+    public string Message { get; set; }
+    public string InvoiceNo { get; set; }
+    public decimal TotalAmount { get; set; }
+}
+
+public class PizzaOrderInvoiceHeadModel
+{
+    public int PizzaOrderId { get; set; }
+    public string PizzaOrderInvoiceNo { get; set; }
+    public decimal TotalAmount { get; set; }
+    public int PizzaId { get; set; }
+    public string Pizza { get; set; }
+    public decimal Price { get; set; }
+}
+
+public class PizzaOrderInvoiceDetailModel
+{
+    public int PizzaOrderDetailId { get; set; }
+    public string PizzaOrderInvoiceNo { get; set; }
+    public int PizzaExtraId { get; set; }
+    public string PizzaExtraName { get; set; }
+    public decimal Price { get; set; }
+}
+
+public class PizzaOrderInvoiceResponse
+{
+    public PizzaOrderInvoiceHeadModel Order { get; set; }
+    public List<PizzaOrderInvoiceDetailModel> OrderDetail { get; set; }
 }
 
