@@ -31,6 +31,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.WinFormsApp"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.WinFormsAppSqlInjection", "ZKWMDotNetCore.WinFormsAppSqlInjection\ZKWMDotNetCore.WinFormsAppSqlInjection.csproj", "{D54459C1-85BC-413D-8653-0492F3795294}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.UI", "ZKWMDotNetCore.NLayer.UI\ZKWMDotNetCore.NLayer.UI.csproj", "{F364125B-1AE4-44B7-AA4B-51E88564ACC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.BusinessLogic", "ZKWMDotNetCore.NLayer.BusinessLogic\ZKWMDotNetCore.NLayer.BusinessLogic.csproj", "{5149E3F4-968D-4553-BDBE-3C36DF8586E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.DataAccess", "ZKWMDotNetCore.NLayer.DataAccess\ZKWMDotNetCore.NLayer.DataAccess.csproj", "{679C6BAF-85C9-4C20-8458-1CE0CD056602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +87,18 @@ Global
 		{D54459C1-85BC-413D-8653-0492F3795294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D54459C1-85BC-413D-8653-0492F3795294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D54459C1-85BC-413D-8653-0492F3795294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F364125B-1AE4-44B7-AA4B-51E88564ACC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F364125B-1AE4-44B7-AA4B-51E88564ACC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F364125B-1AE4-44B7-AA4B-51E88564ACC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F364125B-1AE4-44B7-AA4B-51E88564ACC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5149E3F4-968D-4553-BDBE-3C36DF8586E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5149E3F4-968D-4553-BDBE-3C36DF8586E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5149E3F4-968D-4553-BDBE-3C36DF8586E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5149E3F4-968D-4553-BDBE-3C36DF8586E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
