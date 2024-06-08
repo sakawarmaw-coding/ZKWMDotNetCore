@@ -1,6 +1,6 @@
 ﻿namespace ZKWMDotNetCore.WinFormsApp
 {
-    partial class FrmBlog
+    partial class FrmNewBlog
     {
         /// <summary>
         ///  Required designer variable.
@@ -36,6 +36,7 @@
             label3 = new Label();
             btnCancel = new Button();
             btnSave = new Button();
+            btnUpdate = new Button();
             SuspendLayout();
             // 
             // txtTitle
@@ -115,12 +116,26 @@
             btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
-            // FrmBlog
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.FromArgb(128, 128, 255);
+            btnUpdate.FlatAppearance.BorderSize = 0;
+            btnUpdate.FlatStyle = FlatStyle.Flat;
+            btnUpdate.ForeColor = Color.White;
+            btnUpdate.Location = new Point(348, 358);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(90, 33);
+            btnUpdate.TabIndex = 3;
+            btnUpdate.Text = "&Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Visible = false;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // FrmNewBlog
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 510);
-            Controls.Add(btnSave);
             Controls.Add(btnCancel);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -128,11 +143,13 @@
             Controls.Add(txtContent);
             Controls.Add(txtAuthor);
             Controls.Add(txtTitle);
+            Controls.Add(btnSave);
+            Controls.Add(btnUpdate);
             Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Name = "FrmBlog";
+            Name = "FrmNewBlog";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Blog";
-            Load += FrmBlog_Load;
+            Load += FrmNewBlog_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,5 +163,6 @@
         private Label label3;
         private Button btnCancel;
         private Button btnSave;
+        private Button btnUpdate;
     }
 }

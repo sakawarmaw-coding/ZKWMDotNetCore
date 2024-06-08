@@ -4,16 +4,34 @@ using ZKWMDotNetCore.WinFormsApp.Queries;
 
 namespace ZKWMDotNetCore.WinFormsApp
 {
-    public partial class FrmBlog : Form
+    public partial class FrmNewBlog : Form
     {
         private readonly DapperService _dapperService;
-        public FrmBlog()
+        private readonly int _blogId;
+        public FrmNewBlog()
         {
             InitializeComponent();
             _dapperService = new DapperService(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
         }
 
-        private void FrmBlog_Load(object sender, EventArgs e)
+        public FrmNewBlog(int blogId)
+        {
+            InitializeComponent();
+            _blogId = blogId;
+            _dapperService = new DapperService(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
+
+            var model = _dapperService.QueryFirstOrDefault<BlogModel>(Queries.BlogQuery.BlogEdit, new { BlogId = _blogId });
+
+            txtTitle.Text = model.BlogTitle;
+            txtAuthor.Text = model.BlogAuthor;
+            txtContent.Text = model.BlogContent;
+
+            btnSave.Visible = false;
+            btnUpdate.Visible = true;
+
+        }
+
+        private void FrmNewBlog_Load(object sender, EventArgs e)
         {
             txtTitle.Select();
         }
@@ -56,9 +74,28 @@ namespace ZKWMDotNetCore.WinFormsApp
             txtTitle.Focus();
         }
 
-        private void txtAuthor_TextChanged(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var item = new BlogModel
+                {
+                    BlogId = _blogId,
+                    BlogTitle = txtTitle.Text.Trim(),
+                    BlogAuthor = txtAuthor.Text.Trim(),
+                    BlogContent = txtContent.Text.Trim()
+                };
 
+                var result = _dapperService.Execute(Queries.BlogQuery.BlogUpdate,item);
+                string message = result > 0 ? "Updating Successful." : "Updating Failed.";
+                MessageBox.Show(message);
+
+                this.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
