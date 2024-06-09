@@ -85,28 +85,31 @@ function updateBlog(id, title, author, content){
 }
 
 function deleteBlog(id){
-    let result = confirm("Are you sure want to delete?");
-    if(!result) return;
-
-    let lst = getBlogs();
-
-    const items = lst.filter(x => x.id === id);
-    console.log(items);
-
-    console.log(items.length);
-    if(items.length == 0){
-        console.log("no data found.");
-        errorMessage("no data found.");
-        return;
-    }
+    // let result = confirm("Are you sure want to delete?");
+    // if(!result) return;
     
-    lst = lst.filter(x=> x.id !== id);
+    // let lst = getBlogs();
 
-    const jsonBlog = JSON.stringify(lst);
-    localStorage.setItem("blogs",jsonBlog);
+    // const items = lst.filter(x => x.id === id);
+    // console.log(items);
 
-    successMessage("Delete Successful.");
-    getBlogTable();
+    // console.log(items.length);
+    // if(items.length == 0){
+    //     console.log("no data found.");
+    //     errorMessage("no data found.");
+    //     return;
+    // }
+    
+    // lst = lst.filter(x=> x.id !== id);
+
+    // const jsonBlog = JSON.stringify(lst);
+    // localStorage.setItem("blogs",jsonBlog);
+
+    // successMessage("Delete Successful.");
+    // getBlogTable();
+
+    confirmMessage(id);
+
 }
 
 function uuidv4() {
@@ -148,12 +151,53 @@ $('#btnCancel').click(function(){
 })
 
 function successMessage(message){
-    alert(message);
+    Swal.fire({
+        title: "Success!",
+        text: message,
+        icon: "success"
+      });
 }
 
 function errorMessage(message){
-    alert(message);
+    Swal.fire({
+        title: "Error!",
+        text: message,
+        icon: "error"
+      });
 }
+
+function confirmMessage(id){
+    Notiflix.Confirm.show(
+    'Confirm',
+    'Are you sure want to delete?',
+    'Yes',
+    'Cancel',
+    function okCb() {
+        let lst = getBlogs();
+
+        const items = lst.filter(x => x.id === id);
+        console.log(items);
+    
+        console.log(items.length);
+        if(items.length == 0){
+            console.log("no data found.");
+            errorMessage("no data found.");
+            return;
+        }
+        
+        lst = lst.filter(x=> x.id !== id);
+    
+        const jsonBlog = JSON.stringify(lst);
+        localStorage.setItem("blogs",jsonBlog);
+
+        Notiflix.Notify.success('Delete Successful.');
+       
+        getBlogTable();
+    
+    }
+    );
+}
+
 
 function clearControls(){
     $('#txtTitle').val('');
