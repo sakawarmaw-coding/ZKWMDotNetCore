@@ -9,12 +9,15 @@ using ZKWMDotNetCore.ConsoleApp.Services;
 
 namespace ZKWMDotNetCore.ConsoleApp.EFCoreExamples
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
+        //}
+
+        public AppDbContext(DbContextOptions options) : base(options) { }
+
 
         public DbSet<BlogDto> Blogs { get; set; }
     }

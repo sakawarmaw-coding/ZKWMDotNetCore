@@ -10,14 +10,21 @@ namespace ZKWMDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     public class AdoDotNetExample
     {
-        private readonly SqlConnectionStringBuilder _sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
+        //private readonly SqlConnectionStringBuilder _sqlConnectionStringBuilder = new SqlConnectionStringBuilder()
+        //{
+        //    DataSource = "ZAKAWARMAW\\SQL2022",
+        //    InitialCatalog = "DotNetTrainingBatch4",
+        //    UserID = "sa",
+        //    Password = "sa@123",
+        //    TrustServerCertificate = true
+        //};
+
+        SqlConnectionStringBuilder _sqlConnectionStringBuilder;
+
+        public AdoDotNetExample(SqlConnectionStringBuilder sqlConnectionStringBuilder)
         {
-            DataSource = "ZAKAWARMAW\\SQL2022",
-            InitialCatalog = "DotNetTrainingBatch4",
-            UserID = "sa",
-            Password = "sa@123",
-            TrustServerCertificate = true
-        };
+            _sqlConnectionStringBuilder = sqlConnectionStringBuilder;
+        }
 
         public void Read()
         {

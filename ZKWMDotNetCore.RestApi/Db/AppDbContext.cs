@@ -8,12 +8,14 @@ using ZKWMDotNetCore.RestApi.Models;
 
 namespace ZKWMDotNetCore.RestApi.Db
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(ConnectionString.sqlConnectionStringBuilder.ConnectionString);
+        //}
+
+        public AppDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<BlogModel> Blogs { get; set; }
     }

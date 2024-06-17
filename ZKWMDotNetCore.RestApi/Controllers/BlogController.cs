@@ -10,11 +10,18 @@ namespace ZKWMDotNetCore.RestApi.Controllers
     [ApiController]
     public class BlogController : ControllerBase
     {
-        private readonly AppDbContext _db;
+        //private readonly AppDbContext _db;
 
-        public BlogController()
+        //public BlogController()
+        //{
+        //    _db = new AppDbContext();
+        //}
+
+        public readonly AppDbContext _db;
+
+        public BlogController(AppDbContext db)
         {
-            _db = new AppDbContext();
+            _db = db;
         }
 
         [HttpGet]
