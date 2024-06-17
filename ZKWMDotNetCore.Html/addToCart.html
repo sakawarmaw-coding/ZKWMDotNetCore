@@ -13,9 +13,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<style>
-
-</style>
 </head>
 
 <body>
@@ -25,7 +22,7 @@
         <div class="txt-heading">
             <h1>Shopping cart</h1>
         </div>
-        <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+        <button class="btn btn-primary" onClick="emptyCart()" id="btnEmpty">Empty Cart</button>
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
             <thead>
                 <tr>
@@ -52,30 +49,25 @@
         <div class="txt-heading">
             <h1>Products</h1>
         </div>
-        <div id="product-item-container"></div>
+        <div id="product-item-container" class="row"></div>
     </div>
 </div>
 <script>
 $(document).ready(function() {
 	var productItem = [{
-			productName: "FinePix Pro2 3D Camera",
+			productName: "3D Camera",
 			price: "1800.00",
-			photo: "./images/camera.jpeg"
+			photo: "camera.jpeg"
 		},
 		{
 			productName: "Shampoo",
 			price: "800.00",
-			photo: "./images/shampoo.jpeg"
+			photo: "shampoo.jpeg"
 		},
 		{
-			productName: "Luxury Ultra thin Wrist Watch",
+			productName: "Laptop",
 			price: "500.00",
-			photo: "laptop.jpg"
-		},
-		{
-			productName: "XP 1155 Intel Core Laptop",
-			price: "1000.00",
-			photo: "watch.jpg"
+			photo: "laptop.jpeg"
 		}];
 	showProductGallery(productItem);
 	showCartTable();
@@ -164,7 +156,7 @@ function showProductGallery(product) {
 	//Iterate javascript shopping cart array
 	var productHTML = "";
 	product.forEach(function(item) {
-		productHTML += '<div class="product-item">'+
+		productHTML += '<div class="col product-item">'+
 					'<img src="product-images/' + item.photo + '">'+
 					'<div class="productname">' + item.productName + '</div>'+
 					'<div class="price">$<span>' + item.price + '</span></div>'+
