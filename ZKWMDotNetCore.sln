@@ -29,13 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.ConsoleAppRe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.WinFormsApp", "ZKWMDotNetCore.WinFormsApp\ZKWMDotNetCore.WinFormsApp.csproj", "{73BFBB7B-468A-4189-9B81-AEA2F48B2952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.WinFormsAppSqlInjection", "ZKWMDotNetCore.WinFormsAppSqlInjection\ZKWMDotNetCore.WinFormsAppSqlInjection.csproj", "{D54459C1-85BC-413D-8653-0492F3795294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.WinFormsAppSqlInjection", "ZKWMDotNetCore.WinFormsAppSqlInjection\ZKWMDotNetCore.WinFormsAppSqlInjection.csproj", "{D54459C1-85BC-413D-8653-0492F3795294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.UI", "ZKWMDotNetCore.NLayer.UI\ZKWMDotNetCore.NLayer.UI.csproj", "{F364125B-1AE4-44B7-AA4B-51E88564ACC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.NLayer.UI", "ZKWMDotNetCore.NLayer.UI\ZKWMDotNetCore.NLayer.UI.csproj", "{F364125B-1AE4-44B7-AA4B-51E88564ACC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.BusinessLogic", "ZKWMDotNetCore.NLayer.BusinessLogic\ZKWMDotNetCore.NLayer.BusinessLogic.csproj", "{5149E3F4-968D-4553-BDBE-3C36DF8586E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.NLayer.BusinessLogic", "ZKWMDotNetCore.NLayer.BusinessLogic\ZKWMDotNetCore.NLayer.BusinessLogic.csproj", "{5149E3F4-968D-4553-BDBE-3C36DF8586E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.NLayer.DataAccess", "ZKWMDotNetCore.NLayer.DataAccess\ZKWMDotNetCore.NLayer.DataAccess.csproj", "{679C6BAF-85C9-4C20-8458-1CE0CD056602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.NLayer.DataAccess", "ZKWMDotNetCore.NLayer.DataAccess\ZKWMDotNetCore.NLayer.DataAccess.csproj", "{679C6BAF-85C9-4C20-8458-1CE0CD056602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.MinimalAPI", "ZKWMDotNetCore.MinimalAPI\ZKWMDotNetCore.MinimalAPI.csproj", "{14E498E3-0B09-4563-9AED-7B46E2FFAF45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{679C6BAF-85C9-4C20-8458-1CE0CD056602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E498E3-0B09-4563-9AED-7B46E2FFAF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E498E3-0B09-4563-9AED-7B46E2FFAF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E498E3-0B09-4563-9AED-7B46E2FFAF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E498E3-0B09-4563-9AED-7B46E2FFAF45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
