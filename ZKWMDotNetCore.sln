@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.MinimalAPI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.MvcApp", "ZKWMDotNetCore.MvcApp\ZKWMDotNetCore.MvcApp.csproj", "{79A9CD87-4AD0-4217-A181-3FB6421E1384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.MvcApp2", "ZKWMDotNetCore.MvcApp2\ZKWMDotNetCore.MvcApp2.csproj", "{368D6BB9-E270-42E5-BE45-D2AEBAE8DA03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZKWMDotNetCore.MvcApp2", "ZKWMDotNetCore.MvcApp2\ZKWMDotNetCore.MvcApp2.csproj", "{368D6BB9-E270-42E5-BE45-D2AEBAE8DA03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKWMDotNetCore.MvcChartApp", "ZKWMDotNetCore.MvcChartApp\ZKWMDotNetCore.MvcChartApp.csproj", "{A47D05E5-3492-4E8F-BAA3-86315E7AC682}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{368D6BB9-E270-42E5-BE45-D2AEBAE8DA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{368D6BB9-E270-42E5-BE45-D2AEBAE8DA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{368D6BB9-E270-42E5-BE45-D2AEBAE8DA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47D05E5-3492-4E8F-BAA3-86315E7AC682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47D05E5-3492-4E8F-BAA3-86315E7AC682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47D05E5-3492-4E8F-BAA3-86315E7AC682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47D05E5-3492-4E8F-BAA3-86315E7AC682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
